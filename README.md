@@ -64,6 +64,11 @@ The goal is to ingest data from multiple sources, transform it using cloud-nativ
 - Power BI
 - GitHub
 ---
+## Security Considerations
+- Azure SQL protected using firewall rules and authentication
+- ADLS access controlled via Azure credentials
+- For production, secrets can be managed using Azure Key Vault and Databricks secret scopes
+---
 ## Key Features Implemented
 
 - End-to-end ETL pipeline using Azure services
