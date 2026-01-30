@@ -64,7 +64,9 @@ The goal is to ingest data from multiple sources, transform it using cloud-nativ
 - Performance optimization using Delta Lake
 ---
 ## Sample Dashboard
+<img width="1418" height="798" alt="Screenshot 2026-01-30 155536" src="https://github.com/user-attachments/assets/a0da140c-8896-45ce-8dd5-6578fa3b1f71" />
 
-<img width="709" height="399" alt="image" src="https://github.com/user-attachments/assets/de23b363-3c68-4d3c-997d-0d17ee745d97" />
+
+
 
 
