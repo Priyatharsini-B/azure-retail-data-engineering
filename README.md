@@ -29,6 +29,23 @@ The goal is to ingest data from multiple sources, transform it using cloud-nativ
 - Silver Layer – Cleaned and standardized data
 - Gold Layer – Aggregated and business-ready data
 ---
+## Data Transformation (Azure Databricks)
+
+### Silver Layer
+- Casted raw columns into appropriate data types
+- Joined transactions with product, store, and customer dimensions
+- Derived business column: total_amount = quantity × price
+- Stored cleaned data in Delta format
+
+### Gold Layer
+- Aggregated sales metrics by date, product, category, and store
+- Calculated KPIs:
+  - Total Quantity Sold
+  - Total Sales Amount
+  - Number of Transactions
+  - Average Transaction Value
+- Optimized Gold tables for Power BI reporting
+---
 ## Data Flow
 
 1. Data ingested from Azure SQL and REST API using ADF pipelines
