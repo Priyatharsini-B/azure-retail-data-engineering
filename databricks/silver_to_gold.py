@@ -17,6 +17,10 @@ gold_df = silver_df.groupBy(
 )
 
 # Write to Gold layer
-gold_df.write.format("delta") \
+gold_path = "abfss://retail@retailstoragepoc.dfs.core.windows.net/gold/"
+
+gold_df.write \
     .mode("overwrite") \
-    .save("abfss://retail@<storage-account>.dfs.core.windows.net/gold/sales_kpis")
+    .format("delta") \
+    .save(gold_path)
+
